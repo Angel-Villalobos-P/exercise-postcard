@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <title>Postcard</title>
 </head>
+
 <body>
-    <div>
-        <!-- Header del post card -->
-        <div>
-            <div>
-                <img src="http://assets.breatheco.de/apis/img/icon/4geeks.png"/>
-            </div>
-            <div>
+    <div class="main-content">
+        <header></header>
+        <section>
+        <form class="postcard" action="http://formspree.io/info@breatheco.de">
+            <div class="poscard-header">
+                <img src="http://assets.breatheco.de/apis/img/icon/4geeks.png" />
                 <h1>My Postcard</h1>
             </div>
-        </div>
-        <!-- Body del post card -->
-        <div>
+            <!-- Body del post card -->
             <div>
-                <p>
-                    Look how awesome! This is a postcard that I created using HMTL 5 and CSS3 during my 4Geeks Academy Course!
-                </p>
-                <p>
-                    This is so cool, can't wait to start doing more stuff!
-                </p>
+                <div class="postcard-body">
+                    <div class="left-part">
+                        <p>Look how awesome! This is a postcard that I created using HMTL 5 and CSS3 during my 4Geeks
+                            Academy
+                            Course!</p>
+                        <p>This is so cool, can't wait to start doing more stuff!</p>
+                    </div>
+                    <!-- Footer del post card -->
+                    <div class="right-part">
+                        <input type="text" placeholder="Some name">
+                        <input type="text" placeholder="Some mail">
+                        <input type="text" placeholder="Some comment">
+                    </div>
+                </div>
+                <div class="postcard-footer">
+                    <input type="submit" value="Send my postcard">
+                </div>
             </div>
-            <!-- Footer del post card -->
-            <div>
-                <input type="text" value="Some name">
-                <input type="text" value="Some mail">
-                <input type="text" value="Some comment">
-            </div>
-            <div>
-                <button>Send my postcard</button>
-            </div>
-
-        </div>
-
+        </form>
+    </section>
     </div>
-    
+
 </body>
+
 </html>
